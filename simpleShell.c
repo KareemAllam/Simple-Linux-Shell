@@ -22,19 +22,16 @@
     #define C_CYAN    "\x1b[96m"
     #define C_RESET   "\x1b[0m"
 
+    // Pipeline Struct
     struct red{
         int count ;
         int index ;
-    }in_red, out_red, pipe_red;
-
-
-
+    } in_red, out_red, pipe_red;
 
     // Defining Needed Global Variables
-    char entered_line[MAX_CHAR] ;   // It will hold the  string input from the user
+    char entered_line[MAX_CHAR] ;   // It will hold the string input from the user
     char edited_line[2*MAX_CHAR] ;  // It will hold the previous string input from the user after checking each character
     char* word[MAX_WORDS+1] ;       // It will hold a pointers to the words strings after splitting the user input
-
     pid_t pid_1 ;
     pid_t pid_2 ;
 
